@@ -7,7 +7,7 @@ window.onload = () => {
     });
   }
 
-  function turnGreen() {
+  function turnGreenOnClick() {
     let mainDiv = document.querySelector('.main');
     mainDiv.addEventListener('click', (event) => {
       event.preventDefault();
@@ -26,7 +26,7 @@ window.onload = () => {
     });
   }
 
-  function turnPink() {
+  function turnPinkOnDblClick() {
     let mainDiv = document.querySelector('.main')
     mainDiv.addEventListener('dblclick', (event) => {
       event.preventDefault();
@@ -34,7 +34,7 @@ window.onload = () => {
     });
   }
   listenForHoverOnMain();
-  turnGreen();
-  turnPink();
+  turnGreenOnClick();
+  turnPinkOnDblClick();
   colorClicker();
 };
