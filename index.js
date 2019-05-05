@@ -26,9 +26,15 @@ window.onload = () => {
     });
   }
 
-
-
+  function turnPink() {
+    let mainDiv = document.querySelector('.main')
+    mainDiv.addEventListener('dblclick', (event) => {
+      event.preventDefault();
+      mainDiv.style.backgroundColor = 'pink';
+    });
+  }
   listenForHoverOnMain();
   turnGreen();
+  turnPink();
   colorClicker();
 };
