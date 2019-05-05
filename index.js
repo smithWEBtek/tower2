@@ -8,12 +8,27 @@ window.onload = () => {
   }
 
   function turnGreen() {
-    let mainDiv = document.querySelector('.main')
+    let mainDiv = document.querySelector('.main');
     mainDiv.addEventListener('click', (event) => {
       event.preventDefault();
       mainDiv.style.backgroundColor = 'green';
     });
   }
+
+  function colorClicker() {
+    let mainDiv = document.querySelector('.main');
+    let colorButtons = document.querySelectorAll('.color-button');
+    colorButtons.forEach(button => {
+      button.addEventListener('click', (event) => {
+        event.preventDefault();
+        mainDiv.style.backgroundColor = event.currentTarget.classList[1];
+      })
+    });
+  }
+
+
+
   listenForHoverOnMain();
   turnGreen();
+  colorClicker();
 };

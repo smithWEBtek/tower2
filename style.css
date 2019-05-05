@@ -1,3 +1,17 @@
 .main {
   background-color: aliceblue;
+  width: 200px;
+  height: 200px;
+}
+
+.violet {
+  background-color: violet;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.aqua {
+  background-color: aqua;
 }
